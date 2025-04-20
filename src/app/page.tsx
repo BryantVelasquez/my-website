@@ -1,3 +1,4 @@
+
 "use client";
 
 import {
@@ -26,6 +27,7 @@ export default function Home() {
         className="relative h-screen flex flex-col items-center justify-center text-white text-shadow bg-cover bg-center"
         style={{
           backgroundImage: "url('/profBryant.jpg')",
+          backgroundColor: "#111827",
         }}
       >
         <h2 className="text-5xl font-bold mb-4">Welcome to my page</h2>
