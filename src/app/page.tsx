@@ -6,8 +6,6 @@ import{
   FaInstagram,
   FaLinkedin,
 }from "react-icons/fa";
-import Image from "next/image";
-import backgroundImage from "/public/TheBryant.jpg"; 
 
 
 export default function Home() {
