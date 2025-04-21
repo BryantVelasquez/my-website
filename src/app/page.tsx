@@ -32,7 +32,7 @@ export default function Home() {
         }}
       >
         <h2 className="text-5xl font-bold mb-4 text-shadow">Programmer and Gamer</h2>
-        <p className="text-lg max-w-xl">
+        <p className="bg-black bg-opacity-50 p-3 rounded-md backdrop-blur-sm shadow-xl ring-1 ring-white/10 max-w-xl">
           I love to build apps, solve problems, and top frag in Counter Strike.
         </p>
       </section>
