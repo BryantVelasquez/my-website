@@ -15,7 +15,7 @@ export default function Home() {
      <h1 className="text-xl font-semibold">Bryant Velasquez</h1>
      <nav className="space-x-6 text-sm">
       <a href="#home" className="hover:underline">Home</a>
-      <a href="#about" className="hover:underline">About</a>
+      <a href="#about" className="hover:underline">About Me</a>
       <a href="#contact" className="hover:underline">Contact</a>
       <a href="#projects" className="hover:underline">Projects</a>
     </nav>
@@ -31,16 +31,16 @@ export default function Home() {
           backgroundColor: "#111827",
         }}
       >
-        <h2 className="text-5xl font-bold mb-4 text-shadow">Welcome to my page</h2>
+        <h2 className="text-5xl font-bold mb-4 text-shadow">Programmer and Gamer</h2>
         <p className="text-lg max-w-xl">
-          This page is in progress, in here I will post things about me, social media, links, etc...
+          
         </p>
       </section>
 
       {/* ABOUT SECTION */}
       <section id="about" className="bg-white py-20 px-8">
         <h2 className="text-4xl font-bold text-blue-900 mb-6">About Me</h2>
-        <p className="mb-12">Here&apos;s a bit more about who I am and what I love.</p>
+        <p className="mb-12">Here&apos;s a bit more about who I am and what I like to do.</p>
 
         <div className="flex flex-col md:flex-row justify-center gap-12 text-left max-w-4xl mx-auto">
           {/* Programmer */}
