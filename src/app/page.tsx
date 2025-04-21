@@ -6,20 +6,21 @@ import {
   FaInstagram,
   FaLinkedin,
 } from "react-icons/fa";
-  //comment
+  //
 export default function Home() {
   return (
     <main className="text-center font-sans text-gray-800">
       {/* NAVBAR */}
-      <header className="flex justify-between items-center p-6 px-12 bg-transparent absolute top-0 left-0 w-full z-10 text-white">
-        <h1 className="text-xl font-semibold">Bryant Velasquez</h1>
-        <nav className="space-x-6 text-sm">
-          <a href="#home" className="hover:underline">Home</a>
-          <a href="#about" className="hover:underline">About</a>
-          <a href="#contact" className="hover:underline">Contact</a>
-          <a href="#apps" className="hover:underline">Project</a>
-        </nav>
-      </header>
+    <header className="flex justify-between items-center p-6 px-12 bg-black bg-opacity-60 backdrop-blur-sm fixed top-0 left-0 w-full z-10 text-white shadow-md">
+     <h1 className="text-xl font-semibold">Bryant Velasquez</h1>
+     <nav className="space-x-6 text-sm">
+      <a href="#home" className="hover:underline">Home</a>
+      <a href="#about" className="hover:underline">About</a>
+      <a href="#contact" className="hover:underline">Contact</a>
+      <a href="#projects" className="hover:underline">Projects</a>
+    </nav>
+  </header>
+
 
       {/* HERO SECTION */}
       <section
@@ -30,7 +31,7 @@ export default function Home() {
           backgroundColor: "#111827",
         }}
       >
-        <h2 className="text-5xl font-bold mb-4">Welcome to my page</h2>
+        <h2 className="text-5xl font-bold mb-4 text-shadow">Welcome to my page</h2>
         <p className="text-lg max-w-xl">
           This page is in progress, in here I will post things about me, social media, links, etc...
         </p>
