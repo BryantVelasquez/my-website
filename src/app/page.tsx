@@ -6,7 +6,7 @@ import {
   FaInstagram,
   FaLinkedin,
 } from "react-icons/fa";
-
+  //comment
 export default function Home() {
   return (
     <main className="text-center font-sans text-gray-800">
