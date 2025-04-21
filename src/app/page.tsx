@@ -11,11 +11,11 @@ export default function Home() {
   return (
     <main className="text-center font-sans text-gray-800">
       {/* NAVBAR */}
-    <header className="flex justify-between items-center p-6 px-12 bg-black bg-opacity-60 backdrop-blur-sm fixed top-0 left-0 w-full z-10 text-white shadow-md">
+    <header className="flex justify-between items-center p-6 px-12 bg-black/40 backdrop-blur-sm fixed top-0 left-0 w-full z-10 text-white">
      <h1 className="text-xl font-semibold">Bryant Velasquez</h1>
      <nav className="space-x-6 text-sm">
       <a href="#home" className="hover:underline">Home</a>
-      <a href="#about" className="hover:underline">About Me</a>
+      <a href="#about" className="hover:underline">About</a>
       <a href="#contact" className="hover:underline">Contact</a>
       <a href="#projects" className="hover:underline">Projects</a>
     </nav>
@@ -25,7 +25,7 @@ export default function Home() {
       {/* HERO SECTION */}
       <section
         id="home"
-        className="relative h-screen flex flex-col items-center justify-center text-white text-shadow bg-cover bg-center"
+        className="relative h-screen flex flex-col items-center justify-center text-white bg-cover bg-[center_25%]"
         style={{
           backgroundImage: "url('/profBryant.jpg')",
           backgroundColor: "#111827",
@@ -33,7 +33,7 @@ export default function Home() {
       >
         <h2 className="text-5xl font-bold mb-4 text-shadow">Programmer and Gamer</h2>
         <p className="text-lg max-w-xl">
-          
+          I love to build apps, solve problems, and top frag in Counter Strike.
         </p>
       </section>
 
