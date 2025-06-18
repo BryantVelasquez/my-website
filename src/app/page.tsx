@@ -1,6 +1,11 @@
 "use client";
 
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import {
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+} from "react-icons/fa";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -34,28 +39,28 @@ export default function Home() {
       {/* ABOUT SECTION */}
       <section id="about" className="bg-white py-20 px-8">
         <h2 className="text-4xl font-bold text-blue-900 mb-6">About Me</h2>
-        <p className="mb-12">Here's a bit more about who I am and what I like to do.</p>
+        <p className="mb-12">Here&apos;s a bit more about who I am and what I like to do.</p>
 
         <div className="flex flex-col md:flex-row justify-center gap-12 text-left max-w-4xl mx-auto">
           <div className="bg-gray-100 p-6 rounded-lg shadow-md w-full md:w-1/2">
             <div className="text-5xl mb-2">💻</div>
             <h3 className="text-xl font-semibold mb-2">I am a programmer</h3>
             <p>
-              I'm passionate about building websites, web apps, and experimenting with new technologies. I love working with React, Next.js, and learning new tools that make code better and cleaner.
+              I&apos;m passionate about building websites, web apps, and experimenting with new technologies. I love working with React, Next.js, and learning new tools that make code better and cleaner.
             </p>
           </div>
           <div className="bg-gray-100 p-6 rounded-lg shadow-md w-full md:w-1/2">
             <div className="text-5xl mb-2">🎮</div>
             <h3 className="text-xl font-semibold mb-2">Gamer</h3>
             <p>
-              When I'm not sitting at my desk coding I enjoy playing games that challenge my mind and reflexes. Some of my all time favorite games are Counter Strike and Elden Ring.
+              When I&apos;m not sitting at my desk coding I enjoy playing games that challenge my mind and reflexes. Some of my all time favorite games are Counter Strike and Elden Ring. I mostly enjoy any FPS game with friends so if you ever want to play let me know!
             </p>
           </div>
           <div className="bg-gray-100 p-6 rounded-lg shadow-md w-full md:w-1/2">
             <div className="text-5xl mb-2">🌳</div>
             <h3 className="text-xl font-semibold mb-2">Nature Lover</h3>
             <p>
-              I enjoy going for walks in parks and relaxing at the beach. Being outdoors helps me clear my mind and recharge.
+              I enjoy going for walks in parks and relaxing at the beach. Being outdoors helps me clear my mind and recharge. It&apos;s one of my favorite ways to take a break from screens and get inspired.
             </p>
           </div>
         </div>
@@ -65,9 +70,30 @@ export default function Home() {
       <section id="socials" className="bg-gray-100 py-16 px-6 text-center">
         <h2 className="text-3xl font-bold mb-8 text-gray-800">Connect with me</h2>
         <div className="flex justify-center gap-10 text-3xl text-gray-700">
-          <a href="https://github.com/BryantVelasquez" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors"><FaGithub /></a>
-          <a href="https://www.linkedin.com/in/bryant-velasquez-41153b271/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-700 transition-colors"><FaLinkedin /></a>
-          <a href="https://www.instagram.com/bryant_velasquez_/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors"><FaInstagram /></a>
+          <a
+            href="https://github.com/BryantVelasquez"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-black transition-colors"
+          >
+            <FaGithub />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/bryant-velasquez-41153b271/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-700 transition-colors"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://www.instagram.com/bryant_velasquez_/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-pink-500 transition-colors"
+          >
+            <FaInstagram />
+          </a>
         </div>
       </section>
 
@@ -76,19 +102,19 @@ export default function Home() {
         <h2 className="text-4xl font-bold text-blue-900 mb-6 text-center">My Projects</h2>
         <p className="text-center mb-12">Here are some of the academic projects I’ve worked on.</p>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2 max-w-6xl mx-auto">
-          {/* Project cards... same as before */}
+          {/* Project cards */}
+          {/* ...existing project code... */}
         </div>
       </section>
 
       {/* APPS SECTION */}
       <section id="apps" className="bg-gray-50 py-20 px-8">
         <h2 className="text-4xl font-bold text-blue-900 mb-6 text-center">My Apps</h2>
-        <p className="text-center mb-12">Here are a few apps I've worked on or am currently building.</p>
+        <p className="text-center mb-12">Here is a small app I built recently.</p>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
-          {/* Tip Calculator Card */}
           <div className="bg-white p-6 rounded-lg shadow-md flex flex-col justify-between items-center text-center">
             <img
-              src="/images/tipcalc.jpg"
+              src="/public/tipcalc.png"
               alt="Tip Calculator"
               className="rounded-xl w-full h-40 object-cover mb-4"
             />
@@ -96,12 +122,12 @@ export default function Home() {
             <p className="text-sm text-gray-700 mb-4">
               Going out to a restaurant? This app helps you calculate your tip easily.
             </p>
-            <a
+            <Link
               href="/apps/tip-calculator"
               className="text-cyan-600 hover:underline text-sm"
             >
               🔗 Open Tip Calculator
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -113,7 +139,7 @@ export default function Home() {
         <form
           onSubmit={(e) => {
             e.preventDefault();
-            alert("Thanks! I'll get back to you soon.");
+            alert("Thanks! I&apos;ll get back to you soon.");
           }}
           className="max-w-xl mx-auto flex flex-col gap-6"
         >

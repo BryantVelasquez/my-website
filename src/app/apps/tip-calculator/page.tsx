@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 export default function TipCalculator() {
   const [bill, setBill] = useState("");
@@ -32,7 +33,6 @@ export default function TipCalculator() {
         <h1 className="text-3xl font-bold text-center text-blue-900 mb-6">💡 Tip Calculator</h1>
 
         <div className="space-y-4">
-          {/* Bill Input */}
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">Bill Amount ($)</label>
             <input
@@ -44,7 +44,6 @@ export default function TipCalculator() {
             />
           </div>
 
-          {/* Tip Input */}
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">Tip Percentage</label>
             <input
@@ -56,7 +55,6 @@ export default function TipCalculator() {
             />
           </div>
 
-          {/* People Input */}
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">Number of People</label>
             <input
@@ -69,7 +67,6 @@ export default function TipCalculator() {
             />
           </div>
 
-          {/* Button */}
           <button
             onClick={calculateTip}
             className="w-full bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 transition-all duration-200"
@@ -77,7 +74,6 @@ export default function TipCalculator() {
             Calculate
           </button>
 
-          {/* Results */}
           {result && (
             <div className="text-center mt-4 text-base font-medium text-green-700 space-y-1">
               <p>💸 Tip Amount: <strong>${result.tipAmount.toFixed(2)}</strong></p>
@@ -88,13 +84,13 @@ export default function TipCalculator() {
         </div>
       </div>
 
-      {/* Back to Home Button */}
-      <a
+      {/* ✅ Back to Home using Next.js Link */}
+      <Link
         href="/"
         className="mt-6 inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded hover:bg-blue-200 transition"
       >
         ← Back to Home
-      </a>
+      </Link>
     </div>
   );
 }
