@@ -97,17 +97,18 @@ export default function Home() {
             <a href="https://github.com/AmaurysM/mabbr-senior-project" target="_blank" className="text-cyan-600 hover:underline text-sm mt-auto">🔗 View on GitHub</a>
           </div>
 
-          {/* Database App */}
+          {/* Python Automated Trader and Backtester */}
           <div className="bg-gray-100 p-6 rounded-lg shadow-md flex flex-col justify-between">
             <div>
-              <h3 className="text-xl font-semibold mb-2">🗂️ Database Management Application</h3>
+              <h3 className="text-xl font-semibold mb-2">🗂️ Trading Simulator and Backtester</h3>
               <ul className="text-sm text-gray-700 list-disc list-inside space-y-1 mb-4">
-                <li>CRUD-based UI using Java, IntelliJ, and SceneBuilder</li>
-                <li>Connected to Microsoft Azure for persistent storage</li>
-                <li>Managed user records efficiently with clean interface</li>
+                <li>Built an automated trading bot that analyzes stock market data using yfinance</li>
+                <li>Created a backtesting module to simulate trades based on historical data and evaluate strategy performance</li>
+                <li>Implemented a scheduled execution pipeline using APScheduler to run trade logic every x minutes</li>
+                <li>Developed a FastAPI backend to expose strategy results, historical trades, and bot status</li>
               </ul>
             </div>
-            <a href="https://github.com/BryantVelasquez/CSC311_DB_UI_semesterlong-project" target="_blank" className="text-cyan-600 hover:underline text-sm mt-auto">🔗 View on GitHub</a>
+            <a href="https://github.com/BryantVelasquez/Potato-Trading-Bot" target="_blank" className="text-cyan-600 hover:underline text-sm mt-auto">🔗 View on GitHub</a>
           </div>
 
           {/* Future Link */}
