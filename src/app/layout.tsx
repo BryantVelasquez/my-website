@@ -4,6 +4,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Welcome",
   description: "Made by Bryant Velasquez",
+  icons: {
+    icon: "/beer.png",
+    shortcut: "/beer.png",
+  },
 };
 
 export default function RootLayout({
